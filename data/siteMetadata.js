@@ -1,22 +1,23 @@
 const siteMetadata = {
-  title: 'Next.js Starter Blog',
-  author: 'Tails Azimuth',
-  headerTitle: 'TailwindBlog',
+  title: 'CHASING LIGHTS AND SHADOWS',
+  author: 'Justin Wu',
+  headerTitle: 'CHASING LIGHTS AND SHADOWS',
   description: 'A blog created with Next.js and Tailwind.css',
-  language: 'en-us',
+  language: 'zh-TW',
   theme: 'system', // system, dark or light
   siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',
-  siteRepo: 'https://github.com/timlrx/tailwind-nextjs-starter-blog',
+  siteRepo: 'https://github.com/justin3737/justin-next-blog',
   siteLogo: '/static/images/logo.png',
   image: '/static/images/avatar.png',
   socialBanner: '/static/images/twitter-card.png',
-  email: 'address@yoursite.com',
-  github: 'https://github.com',
+  email: 'juns3700@gmail.com',
+  github: 'https://github.com/justin3737',
+  instagram: 'https://www.instagram.com/justin3737',
   twitter: 'https://twitter.com/Twitter',
   facebook: 'https://facebook.com',
   youtube: 'https://youtube.com',
-  linkedin: 'https://www.linkedin.com',
-  locale: 'en-US',
+  linkedin: 'https://www.linkedin.com/in/justin-wu',
+  locale: 'zh-TW',
   analytics: {
     // If you want to use an analytics provider you have to add it to the
     // content security policy in the `next.config.js` file.
