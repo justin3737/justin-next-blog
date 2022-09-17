@@ -1,6 +1,6 @@
 const siteMetadata = {
   title: 'CHASING LIGHTS AND SHADOWS',
-  author: 'Justin Wu',
+  author: 'Justin',
   headerTitle: 'CHASING LIGHTS AND SHADOWS',
   description: 'A blog created with Next.js and Tailwind.css',
   language: 'zh-TW',
