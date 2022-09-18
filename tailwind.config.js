@@ -30,7 +30,7 @@ module.exports = {
       },
       fontFamily: {
         //@ts-ignore
-        sans: ['InterVariable', ...defaultTheme.fontFamily.sans],
+        sans: [...defaultTheme.fontFamily.sans],
       },
       colors: {
         primary: colors.teal,
@@ -100,7 +100,7 @@ module.exports = {
             },
             strong: { color: theme('colors.gray.600') },
             blockquote: {
-              color: theme('colors.gray.900'),
+              color: theme('colors.gray.500'),
               borderLeftColor: theme('colors.gray.200'),
             },
           },
