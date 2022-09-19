@@ -37,7 +37,6 @@ authors: ['default']
 - $lte  小於等於
 - $in  存在某個值
 - $nin  不存在某個值
-
 ```
 
 
@@ -53,14 +52,14 @@ authors: ['default']
 
 - [db.collection.findOne()](https://www.mongodb.com/docs/manual/reference/method/db.collection.findOne/) 通常用於找ID
 
-```bash
+```js showLineNumbers
 > db.rooms.find()
 { "_id" : ObjectId("62452f3200215a13d32151f5"), "rating" : 4.5, "price" : 1000, "name" : "標準單人房" }
 ```
 
 - 多個條件：評價大於等於4.7，金額小於等於2000
 
-```bash
+```js showLineNumbers
 > db.rooms.find(
   {
    "rating": {
@@ -77,7 +76,7 @@ authors: ['default']
 
 - 保護特定資料，例如ID
 
-```bash
+```js showLineNumbers
 > db.rooms.find(
   {
    "rating": {
@@ -96,7 +95,7 @@ authors: ['default']
 - 查找陣列內的內容
 - $in 像是 or 的感覺 符合一項即可撈出來
 
-```bash
+```js showLineNumbers
 > db.rooms.find(
   {
     "payment":  {
