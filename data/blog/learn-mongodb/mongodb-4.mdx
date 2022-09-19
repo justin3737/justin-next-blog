@@ -12,9 +12,9 @@ authors: ['default']
 
 - MongoDB 版本5.0
 
-### 一般搜尋
+## 一般搜尋
 
-```
+```js showLineNumbers
 - db.集合名稱(collections name).find()
 - 尋找對應屬性：db.collections.find({屬性名稱:屬性值})
 - 數值區間：db.collections.find({屬性名稱:{$lte:400}})
@@ -23,9 +23,9 @@ authors: ['default']
 ```
 ---
 
-### 常用語法
+## 常用語法
 
-```
+```js showLineNumbers
 - project 保護欄位：db.rooms.find({"name":/雙/},{"_id":0})
 - 搜尋陣列裡面的值：db.rooms.find({"payment":{$in:["信用卡"]}})
 
@@ -47,7 +47,7 @@ authors: ['default']
 
 ## Example
 
-### 尋找單筆或多筆
+## 尋找單筆或多筆
 
 - [db.collection.find()](https://www.mongodb.com/docs/manual/reference/method/db.collection.find/#mongodb-method-db.collection.find)
 
@@ -116,7 +116,7 @@ authors: ['default']
 
 ---
 
-### MongoDB 相關文章：
+## MongoDB 相關文章：
 - <a href="/blog/learn-mongodb/mongodb-1">MongoDB學習筆記 - 安裝啟動與GUI軟體</a><br/>
 - <a href="/blog/learn-mongodb/mongodb-2">MongoDB學習筆記 - 註冊帳號，並申請MongoDB Atlas雲端主機服務流程</a><br/>
 - <a href="/blog/learn-mongodb/mongodb-3">MongoDB學習筆記 - MongoDB Shell CRUD語法</a><br/>

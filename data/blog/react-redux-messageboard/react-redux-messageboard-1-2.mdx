@@ -9,7 +9,7 @@ draft: false
 
 > 每次學習新東西都是寫Todo list實在太無趣了，這是我個人redux學習紀錄：使用react與redux開發一個留言板，並且把相關程式碼放在github上供參考
 
-### Store
+## Store
 
 * 在redux 中只有一個 store
 
@@ -17,7 +17,7 @@ draft: false
 
 單一reducers 建立 store：
 
-```js
+```js showLineNumbers
     import { createStore } from 'redux';
     import msgApp from './reducers';
     const store = createStore(msgApp);
@@ -29,7 +29,7 @@ draft: false
 
 多個 reducers 時建立 store 的方式:
 
-```js
+```js showLineNumbers
     import { combineReducers } from 'redux';
     import modals from './modals';
     import lists from './lists';
@@ -44,7 +44,7 @@ draft: false
 
     const state = store.getState();
 
-### 與View結合
+## 與View結合
 
 * react-redux 提供了 Provider 元件與 connect 方法
 
@@ -54,7 +54,7 @@ draft: false
 
 使用 Provider：
 
-```js
+```js showLineNumbers
     import React from 'react';
     import { render } from 'react-dom';
     import { Provider } from 'react-redux';
@@ -77,7 +77,7 @@ draft: false
 
 來看一下redux官網提供的connect的[範例](https://github.com/reactjs/react-redux/blob/master/docs/api.md#inject-todos-and-a-specific-action-creator-addtodo)：
 
-```js
+```js showLineNumbers
     import { addTodo } from './actionCreators'
     import { bindActionCreators } from 'redux'
 
@@ -92,9 +92,9 @@ draft: false
     export default connect(mapStateToProps, mapDispatchToProps)(TodoApp)
 ```
 
-### connect 使用ES6 的寫法
+## connect 使用ES6 的寫法
 
-```js
+ showLineNumbers
     export default connect(
         state => ({
              todos: state.todos
@@ -105,12 +105,12 @@ draft: false
     )(TodoApp)
 ```
 
-### 關於 bindActionCreators()
+## 關於 bindActionCreators()
 
 -可以傳入多個 actions 給元件當作 props 被使用
  例如:
 
-```js
+ showLineNumbers
     bindActionCreators({
         updateMsg,
         updateUser,
@@ -127,7 +127,7 @@ draft: false
 
 
 
-### React Redux留言版相關文章：
+## React Redux留言版相關文章：
 - <a href="/blog/react-redux-messageboard/react-redux-messageboard-0-intro/">學習Redux — Redux留言板實作功能介紹</a><br/>
 - <a href="/blog/react-redux-messageboard/react-redux-messageboard-1/">學習Redux — 1 右上角按下[留言]的按鈕, 在modal內顯示留言的輸入框(上)</a><br/>
 - <a href="/blog/react-redux-messageboard/react-redux-messageboard-1-2/">學習Redux — 1 右上角按下[留言]的按鈕, 在modal內顯示留言的輸入框(下)</a><br/>

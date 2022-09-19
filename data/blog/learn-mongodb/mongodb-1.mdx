@@ -12,13 +12,13 @@ authors: ['default']
 
 ![1.png](/static/images/blog/mongodb-1/1.png)
 
-### 安裝Mongodb for Mac
+## 安裝Mongodb for Mac
 
 - 下載社群版本 [https://www.mongodb.com/try/download/community](https://www.mongodb.com/try/download/community)
 - 使用管理者權限，將檔案搬移：
 - 👉 [官網安裝教學](https://www.mongodb.com/docs/manual/tutorial/install-mongodb-enterprise-on-os-x/)
 
-```jsx
+```js showLineNumbers
 sudo cp /path/to/the/mongodb-directory/bin/* /usr/local/bin/
 ```
 
@@ -28,12 +28,12 @@ sudo cp /path/to/the/mongodb-directory/bin/* /usr/local/bin/
 
 
 
-### 每次重啟時的指令
+## 每次重啟時的指令
 
 - 打開終端機執行，指定db位置與logs位置
 
 
-```jsx
+```js showLineNumbers
 //可複製以下command
 $ mongod --dbpath /Users/justin/Documents/mongoDB/data --logpath /Users/justin/Documents/mongoDB/logs/mongo.log
 ```
@@ -43,14 +43,14 @@ $ mongod --dbpath /Users/justin/Documents/mongoDB/data --logpath /Users/justin/D
 
 - 然後，再開一個終端機，接著就可以開始執行資料庫命令了
 
-```jsx
+```js showLineNumbers
 $ mongo
 ```
 
 <br/>
 - 例如：
 
-```
+```js showLineNumbers
 > show dbs
 ```
 
@@ -61,7 +61,7 @@ $ mongo
 
 ---
 
-### 使用圖形化介面工具 Compass GUI
+## 使用圖形化介面工具 Compass GUI
 
 - 下載 [https://www.mongodb.com/zh-cn/products/compass](https://www.mongodb.com/zh-cn/products/compass)
 - 安裝好後，按下connect
@@ -76,7 +76,7 @@ $ mongo
 ---
 
 
-### MongoDB 相關文章：
+## MongoDB 相關文章：
 - <a href="/blog/learn-mongodb/mongodb-1">MongoDB學習筆記 - 安裝啟動與GUI軟體</a><br/>
 - <a href="/blog/learn-mongodb/mongodb-2">MongoDB學習筆記 - 註冊帳號，並申請MongoDB Atlas雲端主機服務流程</a><br/>
 - <a href="/blog/learn-mongodb/mongodb-3">MongoDB學習筆記 - MongoDB Shell CRUD語法</a><br/>

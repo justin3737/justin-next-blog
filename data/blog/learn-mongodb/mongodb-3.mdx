@@ -20,9 +20,9 @@ authors: ['default']
 ---
 
 
-### 顯示資料庫
+## 顯示資料庫
 
-```bash
+```js showLineNumbers
 > show dbs
 admin   0.000GB
 config  0.000GB
@@ -32,9 +32,9 @@ local   0.000GB
 ---
 
 
-### 切換資料庫
+## 切換資料庫
 
-```bash
+```js showLineNumbers
 > use [資料庫名稱]
 switched to db [資料庫名稱]
 ```
@@ -42,14 +42,14 @@ switched to db [資料庫名稱]
 ---
 
 
-### 插入一筆/多筆資料
+## 插入一筆/多筆資料
 
 - [db.collection.insertOne()](https://www.mongodb.com/docs/manual/reference/method/db.collection.insertOne/#mongodb-method-db.collection.insertOne)
 - [db.collection.insertMany()](https://www.mongodb.com/docs/manual/reference/method/db.collection.insertMany/#mongodb-method-db.collection.insertMany)
 
 
 
-```bash
+```js showLineNumbers
 > db.rooms.insertOne({"rating":4.5,"price":1000,"name":"標準單人房"})
 {
 	"acknowledged" : true,
@@ -65,7 +65,7 @@ switched to db [資料庫名稱]
 ---
 
 
-### 更新與取代
+## 更新與取代
 
 - [db.collection.updateOne()](https://www.mongodb.com/docs/manual/reference/method/db.collection.updateOne/#mongodb-method-db.collection.updateOne)
 - [db.collection.updateMany()](https://www.mongodb.com/docs/manual/reference/method/db.collection.updateMany/#mongodb-method-db.collection.updateMany)
@@ -73,7 +73,7 @@ switched to db [資料庫名稱]
 
 
 
-```bash
+```js showLineNumbers
 > db.rooms.updateOne(
     {
      "_id": ObjectId("62455ea400215a13d32151f6")
@@ -90,7 +90,7 @@ switched to db [資料庫名稱]
 
 - 找到並且修改一筆成功
 
-```bash
+```js showLineNumbers
 > db.rooms.updateMany(
     {
      "rating": 4.3
@@ -109,7 +109,7 @@ switched to db [資料庫名稱]
 
 - replaceOne() 會取代整個資料結構，不用寫$set
 
-```bash
+```js showLineNumbers
 > db.rooms.replaceOne(
   {
    "name": "標準單人房"
@@ -130,14 +130,14 @@ switched to db [資料庫名稱]
 ---
 
 
-### 刪除
+## 刪除
 
 - [db.collection.deleteOne()](https://www.mongodb.com/docs/manual/reference/method/db.collection.deleteOne/#mongodb-method-db.collection.deleteOne)
 - [db.collection.deleteMany()](https://www.mongodb.com/docs/manual/reference/method/db.collection.deleteMany/#mongodb-method-db.collection.deleteMany)
 
 - 刪除一筆
 
-```bash
+```js showLineNumbers
 > db.rooms.deleteOne(
   {
    "_id": ObjectId("62455ea400215a13d32151f7")
@@ -149,7 +149,7 @@ switched to db [資料庫名稱]
 
 - 刪除多筆
 
-```bash
+```js showLineNumbers
 > db.rooms.deleteMany(
   {
    "rating": 4
@@ -161,9 +161,9 @@ switched to db [資料庫名稱]
 
 ---
 
-### 練習用JSON
+## 練習用JSON
 
-```bash
+```js showLineNumbers
 [
     {
         "rating": 4.5,
@@ -207,7 +207,7 @@ switched to db [資料庫名稱]
 
 ---
 
-### MongoDB 相關文章：
+## MongoDB 相關文章：
 - <a href="/blog/learn-mongodb/mongodb-1">MongoDB學習筆記 - 安裝啟動與GUI軟體</a><br/>
 - <a href="/blog/learn-mongodb/mongodb-2">MongoDB學習筆記 - 註冊帳號，並申請MongoDB Atlas雲端主機服務流程</a><br/>
 - <a href="/blog/learn-mongodb/mongodb-3">MongoDB學習筆記 - MongoDB Shell CRUD語法</a><br/>
