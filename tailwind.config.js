@@ -48,6 +48,7 @@ module.exports = {
               code: { color: theme('colors.primary.400') },
             },
             h1: {
+              fontSize: '30px',
               fontWeight: '700',
               letterSpacing: theme('letterSpacing.tight'),
               color: theme('colors.gray.900'),
@@ -124,6 +125,7 @@ module.exports = {
               code: { color: theme('colors.primary.400') },
             },
             h1: {
+              fontSize: '30px',
               fontWeight: '700',
               letterSpacing: theme('letterSpacing.tight'),
               color: theme('colors.gray.100'),
