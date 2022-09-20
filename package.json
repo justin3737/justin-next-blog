@@ -1,7 +1,9 @@
 {
-  "name": "tailwind-nextjs-starter-blog",
-  "version": "1.5.3",
+  "name": "justin-blog",
   "private": true,
+  "version": "1.6.0",
+  "author": "Justin Wu <juns3700@gmail.com>",
+  "homepage": "https://justin3737.github.io",
   "scripts": {
     "start": "next dev",
     "dev": "next dev",
@@ -12,7 +14,8 @@
     "serve": "next start",
     "analyze": "cross-env ANALYZE=true next build",
     "lint": "next lint --fix --dir pages --dir components --dir lib --dir layouts --dir scripts",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "deploy:github": "yarn build && node ./deploy-github"
   },
   "dependencies": {
     "@fontsource/inter": "4.5.2",
@@ -62,6 +65,7 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^3.3.1",
     "file-loader": "^6.0.0",
+    "gh-pages": "^4.0.0",
     "globby": "11.0.3",
     "husky": "^6.0.0",
     "inquirer": "^8.1.1",
@@ -77,5 +81,9 @@
     "*.+(js|jsx|ts|tsx|json|css|md|mdx)": [
       "prettier --write"
     ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/justin3737/justin3737.github.io.git"
   }
 }
